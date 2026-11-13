@@ -3,6 +3,24 @@
 
 @import "{{ site.theme }}";
 
+.header-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.sub-header-bar {
+    background-color: #0560B7;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none;
+    outline: none;
+}
+
 td {
   text-align: left;
   padding: 0.5em 1em 0.5em 1em;
@@ -27,4 +45,48 @@ li {
 
 ol ul, ul ul {
   margin-bottom: 0px;
+}
+
+/* Link styling */
+a {
+  color: #0560B7;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #04358D;
+}
+
+h1 {
+  color: #04358D;   /* deep blue */
+}
+
+h2 {
+  color: #04358D;   /* deep blue */
+}
+
+h3 {
+  color: #0560B7;   /* medium blue */
+}
+
+/* Callout / Note blockquotes */
+blockquote {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #f4f8fc;
+  border-left: 4px solid #0560B7;
+  padding: 12px 16px;
+  margin: 16px 0 20px 0;
+}
+
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+
+blockquote p + ul,
+blockquote p + ol {
+  margin-top: -10px;
 }
